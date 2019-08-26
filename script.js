@@ -60,7 +60,6 @@ var cardImg = document.getElementsByClassName("card-img-top");
 
 for (let i = 0; i < card.length; i++) {
 	card[i].addEventListener("mouseover", function () {
-		cardText[i].classList.toggle('collapse');
-		cardImg[i].style.width !== '348px' ? cardImg[i].style.width = '348px' : cardImg[i].style.width = '20%' ;	
+		cardText[i].classList.toggle('collapse') && cardImg[i].style.width === '348px' ? cardImg[i].style.width = '20%' : cardImg[i].style.width = '348px' ;	
 });
 }
