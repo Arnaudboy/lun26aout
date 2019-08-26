@@ -52,18 +52,15 @@ var noBootstrap = function () {
 
 navbar[0].addEventListener("dblclick", noBootstrap);
 
-/* FONCTIONALITE 6
+// FONCTIONALITE 6
 
 var card = document.getElementsByClassName("card");
 var cardText = document.getElementsByClassName("card-text");
 var cardImg = document.getElementsByClassName("card-img-top");
 
-for (var i = 0; i < card.length; i++) {
+for (let i = 0; i < card.length; i++) {
 	card[i].addEventListener("mouseover", function () {
-		for (var i = 0; i < card.length; i++) {
-			cardText[i].classList.toggle('collapse');
-			cardImg[i].style.width !== '348px' ? cardImg[i].style.width = '348px' : cardImg[i].style.width = '20%' ;
-		}	
+		cardText[i].classList.toggle('collapse');
+		cardImg[i].style.width !== '348px' ? cardImg[i].style.width = '348px' : cardImg[i].style.width = '20%' ;	
 });
 }
-*/
